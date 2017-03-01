@@ -19,7 +19,11 @@ pub fn from_args() -> Option<Command> {
         return matches.value_of("value").map(|s| Command::Decode(s.to_string()))
     }
 
-    return None
+    if let Some(n) = matches.value_of("value").and_then(|n| n.parse().ok()) {
+        return Some(Command::Encode(n));
+    }
+
+    None
 }
 
 fn get_matches<'a>() -> ArgMatches<'a> {
@@ -35,5 +39,6 @@ fn get_matches<'a>() -> ArgMatches<'a> {
             (about: "Decodes a u64 value")
             (@arg value: +required +takes_value "The value to be decoded")
         )
+        (@arg value: +takes_value "The value to be encoded")
     ).get_matches()
 }
