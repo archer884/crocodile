@@ -5,4 +5,4 @@ authors = ["J/A <archer884@gmail.com>"]
 
 [dependencies]
 clap = "*"
-crockford = {path = "../crockford"}
+crockford = {git = "https://github.com/archer884/crockford.git"}
