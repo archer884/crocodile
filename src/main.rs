@@ -1,6 +1,3 @@
-#[macro_use]
-extern crate clap;
-
 extern crate crockford;
 
 mod command;
@@ -8,7 +5,7 @@ mod command;
 use command::Command;
 
 fn main() {
-    match command::from_args() {
+    match Command::from_args() {
         Some(Command::Encode(n)) => println!("{}", crockford::encode(n)),
         Some(Command::Decode(n)) => {
             let value = crockford::decode(n).expect("Not a valid Crockford value.");
