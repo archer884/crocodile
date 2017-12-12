@@ -2,9 +2,9 @@ extern crate crockford;
 
 mod command;
 
-use command::Command;
-
 fn main() {
+    use command::Command;
+
     match Command::from_args() {
         Some(Command::Encode(n)) => println!("{}", crockford::encode(n)),
         Some(Command::Decode(n)) => {
