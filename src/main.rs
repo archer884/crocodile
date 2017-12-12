@@ -1,4 +1,5 @@
-#[macro_use] extern crate clap;
+#[macro_use]
+extern crate clap;
 
 extern crate crockford;
 
@@ -12,11 +13,11 @@ fn main() {
         Some(Command::Decode(n)) => {
             let value = crockford::decode(n).expect("Not a valid Crockford value.");
             println!("{}", value);
-        },
+        }
 
         _ => {
             println!("usage: croc encode <positive integer> or croc decode <encoded string>");
             std::process::exit(1);
-        },
+        }
     }
 }

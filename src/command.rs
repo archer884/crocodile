@@ -7,7 +7,7 @@ pub enum Command {
 
 pub fn from_args() -> Option<Command> {
     let matches = get_matches();
-    
+
     if let Some(matches) = matches.subcommand_matches("encode") {
         match matches.value_of("value").and_then(|n| n.parse().ok()) {
             None => return None,
@@ -16,7 +16,9 @@ pub fn from_args() -> Option<Command> {
     }
 
     if let Some(matches) = matches.subcommand_matches("decode") {
-        return matches.value_of("value").map(|s| Command::Decode(s.to_string()))
+        return matches.value_of("value").map(
+            |s| Command::Decode(s.to_string()),
+        );
     }
 
     if let Some(n) = matches.value_of("value").and_then(|n| n.parse().ok()) {
