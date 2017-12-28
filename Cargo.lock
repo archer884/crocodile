@@ -2,13 +2,13 @@
 name = "croc"
 version = "0.1.0"
 dependencies = [
- "crockford 1.0.0-beta.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "crockford 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "crockford"
-version = "1.0.0-beta.2"
+version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
-"checksum crockford 1.0.0-beta.2 (registry+https://github.com/rust-lang/crates.io-index)" = "be811c55805093de9c096bfeec79c2a53e123f0ce6e5ad2a24c8eb038adcd0ff"
+"checksum crockford 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)" = "bcc792cd43274e6f6e0e731d7971604d62b31c5d4ffe5c35dbb26cb3fb270846"
