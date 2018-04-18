@@ -2,6 +2,10 @@ extern crate crockford;
 
 mod command;
 
+static USAGE: &str = r#"usage:
+    croc encode <positve integer>
+    croc decode <encoded string>"#;
+
 fn main() {
     use command::Command;
 
@@ -13,7 +17,7 @@ fn main() {
         }
 
         _ => {
-            println!("usage: croc encode <positive integer> or croc decode <encoded string>");
+            println!("{}", USAGE);
             std::process::exit(1);
         }
     }
