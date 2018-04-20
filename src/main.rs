@@ -2,9 +2,9 @@ extern crate crockford;
 
 mod command;
 
-static USAGE: &str = r#"usage:
+static USAGE: &str = "usage:
     croc encode <positve integer>
-    croc decode <encoded string>"#;
+    croc decode <encoded string>";
 
 fn main() {
     use command::Command;
