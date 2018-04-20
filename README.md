@@ -1,7 +1,5 @@
 # crocodile
 
-> Crockford Base32 encoding on the command line
-
 Converts to and from Crockford Base32 identifiers. No muss, no fuss.
 
 ## Usage
