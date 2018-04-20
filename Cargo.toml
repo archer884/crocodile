@@ -2,6 +2,14 @@
 name = "crocodile"
 version = "0.1.1"
 authors = ["J/A <archer884@gmail.com>"]
+license = "Unlicense"
+keywords = ["crockford", "base32", "encoding", "identifier"]
+readme = "README.md"
+homepage = "https://github.com/archer884/crocodile"
+categories = ["command-line-utilities"]
+description = """
+A tool for encoding and decoding Crockford Base32 identifiers.
+"""
 
 [[bin]]
 path = "src/main.rs"
