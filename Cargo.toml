@@ -1,7 +1,11 @@
 [package]
-name = "croc"
+name = "crocodile"
 version = "0.1.1"
 authors = ["J/A <archer884@gmail.com>"]
+
+[[bin]]
+path = "src/main.rs"
+name = "croc"
 
 [dependencies]
 crockford = "1.0"

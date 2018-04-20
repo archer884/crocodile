@@ -1,14 +1,14 @@
 [[package]]
-name = "croc"
+name = "crockford"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "crocodile"
 version = "0.1.1"
 dependencies = [
  "crockford 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
-
-[[package]]
-name = "crockford"
-version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
 "checksum crockford 1.0.1 (registry+https://github.com/rust-lang/crates.io-index)" = "479393b2138a406a7f33473708988550bee3fd1effbb6a8c997a18ef421cfdec"
