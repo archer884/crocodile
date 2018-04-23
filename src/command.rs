@@ -26,7 +26,7 @@ impl Command {
                     .map(|x| x.parse().ok())
                     .collect();
 
-                Some(Command::Encode(input_values?))
+                input_values.map(Command::Encode)
             }
         }
     }
