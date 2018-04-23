@@ -23,7 +23,8 @@ impl Command {
             _ => {
                 let input_values: Option<_> = iter::once(head)
                     .chain(args)
-                    .map(|x| x.parse().ok()).collect();
+                    .map(|x| x.parse().ok())
+                    .collect();
 
                 Some(Command::Encode(input_values?))
             }
